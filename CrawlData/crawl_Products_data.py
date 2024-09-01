@@ -1,11 +1,11 @@
 import requests
-import csv
 from cookies_and_headers import cookies, headers
 import os
-from module_process_csv import read_csv_file
-from module_delete_htmlTag import remove_html_tags
+import pandas as pd
 
-os.makedirs('./CrawlData/CSVFile', exist_ok=True)
+# Create folder to get and store data
+path_Data_Folder = './CrawlData/Data_File/'
+os.makedirs(path_Data_Folder, exist_ok=True)
 
 url='https://tiki.vn/api/v2/products/{}'
 
@@ -16,30 +16,51 @@ params = {
 }
 
 # Read Product_IDs from CSV File
-product_ids = read_csv_file('ProductID.csv')
+product_ids = pd.read_csv('./CrawlData/CSVFile/URLKeys.csv')
+
+def extract_product(category : str, page : int):
+    '''
+    Extract product from a page in category folder
+        Data folder + {category} + page_{page}.json
+    Objective: Extract product from product_id and save as json file
+    '''
+    os.makedirs(path_Data_Folder + str(category) + '/Products', exist_ok=True)
+    path_json_file = path_Data_Folder + str(category) + '/page_' + str(page) + '.json'
+
+    # If json does not exist, return
+    if not os.path.exists(path_json_file):
+        return False
+
+    # Read json file
+    df = pd.read_json(path_json_file)
+    product_ids = df['id']
+
+    for product_id in product_ids:
+        path_Product = path_Data_Folder + str(category) + '/Products/p' + str(product_id) + '.json'
+        # If product already exists, skip
+        if os.path.exists(path_Product):
+            continue
+        # Get product
+        response = requests.get(url.format(product_id), headers=headers, cookies=cookies, params=params)
+        response.raise_for_status()
+
+        # Save data to json file
+        data = response.json()
+        df_product = pd.DataFrame([data])
+        df_product.to_json(path_Product, indent=2)
+    return True
 
 try:
-    with open('./CrawlData/CSVFile/Products.csv', mode='w', newline='', encoding='utf-8') as file:       
-        writer = csv.writer(file)
-        writer.writerow(['Product_ID', 'Product_Name', 'Price', 'Price_comparrison', 'Category','Benefits'])
-        for idx, row in product_ids.iterrows():
-            if (idx + 1) % 1000 == 0:
-                print('Crawled: {}/{} ({}%)'.format(idx + 1, len(product_ids), round((idx + 1) / len(product_ids) * 100, 2)))
-            response = requests.get(url.format(row['Product_ID']), headers=headers, cookies=cookies, params=params)
-            response.raise_for_status()
-            data = response.json()
-
-            # Check if the product has no review, no price comparison, no categories, no benefits
-            if data['review_count'] == 0:
-                continue
-            if 'price_comparison' not in data:
-                data['price_comparison'] = {'sub_title': 'None'}
-            if 'categories' not in data:
-                data['categories'] = {'name': 'None'}
-            if 'benefits' not in data:
-                data['benefits'] = [{'text': 'None'}]
-            
-            writer.writerow([data['id'], data['name'], data['price'], data['price_comparison']['sub_title'], data['categories']['name'], [benefit['text'] for benefit in data['benefits']]])
+    for index, row in product_ids.iterrows():
+        category = row['URLKeys']
+        print('Processing: ', category, end=' ')
+        for page in range(1, 10):
+            print(page, end=' ')
+            if not extract_product(category, page) :
+                break
+        print()
+        
+    
 except requests.exceptions.HTTPError as err:
     print('Error: ', err)
     print('Crawl product failed')
