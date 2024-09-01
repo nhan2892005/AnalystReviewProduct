@@ -5,7 +5,7 @@ services:
     environment:
       POSTGRES_USER: root
       POSTGRES_PASSWORD: root
-      POSTGRES_DB: ny_taxi
+      POSTGRES_DB: product_review
     volumes:
       - "./2_docker_sql/postgres_data:/var/lib/postgresql/data:rw"
     ports:
