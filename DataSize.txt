@@ -1,0 +1,151 @@
+./CrawlData/Data_File
+|
+--Category: nha-sach-tiki
+----Số lượng sản phẩm: 1513
+------Tổng dung lượng: 30.92 MB
+----Số lượng review: 3740
+------Tổng dung lượng: 86.50 MB
+|
+--Category: nha-cua-doi-song
+----Số lượng sản phẩm: 375
+------Tổng dung lượng: 10.91 MB
+----Số lượng review: 3742
+------Tổng dung lượng: 56.18 MB
+|
+--Category: dien-thoai-may-tinh-bang
+----Số lượng sản phẩm: 360
+------Tổng dung lượng: 10.25 MB
+----Số lượng review: 3600
+------Tổng dung lượng: 11.82 MB
+|
+--Category: do-choi-me-be
+----Số lượng sản phẩm: 365
+------Tổng dung lượng: 9.43 MB
+----Số lượng review: 3650
+------Tổng dung lượng: 42.96 MB
+|
+--Category: thiet-bi-kts-phu-kien-so
+----Số lượng sản phẩm: 364
+------Tổng dung lượng: 12.66 MB
+----Số lượng review: 3316
+------Tổng dung lượng: 60.80 MB
+|
+--Category: dien-gia-dung
+----Số lượng sản phẩm: 369
+------Tổng dung lượng: 10.46 MB
+----Số lượng review: 2112
+------Tổng dung lượng: 45.27 MB
+|
+--Category: lam-dep-suc-khoe
+----Số lượng sản phẩm: 367
+------Tổng dung lượng: 9.36 MB
+----Số lượng review: 2202
+------Tổng dung lượng: 52.53 MB
+|
+--Category: o-to-xe-may-xe-dap
+----Số lượng sản phẩm: 375
+------Tổng dung lượng: 9.82 MB
+----Số lượng review: 2250
+------Tổng dung lượng: 28.34 MB
+|
+--Category: thoi-trang-nu
+----Số lượng sản phẩm: 373
+------Tổng dung lượng: 17.28 MB
+----Số lượng review: 2238
+------Tổng dung lượng: 16.45 MB
+|
+--Category: bach-hoa-online
+----Số lượng sản phẩm: 368
+------Tổng dung lượng: 8.15 MB
+----Số lượng review: 2208
+------Tổng dung lượng: 43.03 MB
+|
+--Category: the-thao-da-ngoai
+----Số lượng sản phẩm: 378
+------Tổng dung lượng: 13.47 MB
+----Số lượng review: 2268
+------Tổng dung lượng: 30.68 MB
+|
+--Category: thoi-trang-nam
+----Số lượng sản phẩm: 364
+------Tổng dung lượng: 21.26 MB
+----Số lượng review: 2184
+------Tổng dung lượng: 26.78 MB
+|
+--Category: cross-border-hang-quoc-te
+----Số lượng sản phẩm: 360
+------Tổng dung lượng: 6.49 MB
+----Số lượng review: 863
+------Tổng dung lượng: 1.53 MB
+|
+--Category: laptop-may-vi-tinh-linh-kien
+----Số lượng sản phẩm: 367
+------Tổng dung lượng: 8.43 MB
+----Số lượng review: 647
+------Tổng dung lượng: 11.98 MB
+|
+--Category: giay-dep-nam
+----Số lượng sản phẩm: 370
+------Tổng dung lượng: 16.05 MB
+----Số lượng review: 604
+------Tổng dung lượng: 7.31 MB
+|
+--Category: dien-tu-dien-lanh
+----Số lượng sản phẩm: 369
+------Tổng dung lượng: 9.05 MB
+----Số lượng review: 1900
+------Tổng dung lượng: 10.12 MB
+|
+--Category: giay-dep-nu
+----Số lượng sản phẩm: 372
+------Tổng dung lượng: 15.48 MB
+----Số lượng review: 779
+------Tổng dung lượng: 4.73 MB
+|
+--Category: may-anh
+----Số lượng sản phẩm: 370
+------Tổng dung lượng: 9.53 MB
+----Số lượng review: 549
+------Tổng dung lượng: 6.23 MB
+|
+--Category: phu-kien-thoi-trang
+----Số lượng sản phẩm: 365
+------Tổng dung lượng: 10.83 MB
+----Số lượng review: 1248
+------Tổng dung lượng: 14.95 MB
+|
+--Category: ngon
+----Số lượng sản phẩm: 376
+------Tổng dung lượng: 4.79 MB
+----Số lượng review: 902
+------Tổng dung lượng: 2.29 MB
+|
+--Category: dong-ho-va-trang-suc
+----Số lượng sản phẩm: 372
+------Tổng dung lượng: 14.60 MB
+----Số lượng review: 137
+------Tổng dung lượng: 1.29 MB
+|
+--Category: balo-va-vali
+----Số lượng sản phẩm: 370
+------Tổng dung lượng: 13.58 MB
+----Số lượng review: 320
+------Tổng dung lượng: 3.29 MB
+|
+--Category: tui-vi-nu
+----Số lượng sản phẩm: 365
+------Tổng dung lượng: 11.41 MB
+----Số lượng review: 1254
+------Tổng dung lượng: 6.08 MB
+|
+--Category: tui-thoi-trang-nam
+----Số lượng sản phẩm: 365
+------Tổng dung lượng: 10.75 MB
+----Số lượng review: 1272
+------Tổng dung lượng: 11.94 MB
+|
+--Category: cham-soc-nha-cua
+----Số lượng sản phẩm: 368
+------Tổng dung lượng: 8.39 MB
+----Số lượng review: 1266
+------Tổng dung lượng: 19.76 MB

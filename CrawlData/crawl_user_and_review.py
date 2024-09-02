@@ -57,9 +57,8 @@ def extract_review(category: str, product_id : int, page_review : int, create_fo
     return True
 
 try:
-    for _, row in product_ids.iloc[:1].iterrows():
+    for _, row in product_ids.iterrows():
         category = row['URLKeys']
-        print('Processing: ', category, end=' ')
         path_product = path_Data_Folder + str(category) + '/page_'
         for page_product in range(1, 10):
             path_json_file = path_product + str(page_product) + '.json'
@@ -70,7 +69,6 @@ try:
             for product_id in product_ids:
                 created_folder = True
                 for page_review in range(1, 10):
-                    print(page_review, end=' ')
                     if not extract_review(category, product_id, page_review, created_folder):
                         break
                     created_folder = False
