@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "",
+    "description": "",
+    "price": 1,
+    "brandId": 6,
+    "sellerId": 8,
+    "categoryId": 4,
+    "discount": 0,
+    "rating_average": 5.0,
+    "review_count": 9,
+    "price_comparison": "None",
+    "stars": {
+      "1": {
+        "count": 0,
+        "percent": 0
+      },
+      "2": {
+        "count": 0,
+        "percent": 0
+      },
+      "3": {
+        "count": 0,
+        "percent": 0
+      },
+      "4": {
+        "count": 0,
+        "percent": 0
+      },
+      "5": {
+        "count": 9,
+        "percent": 100
+      }
+    }
+  }
+]
