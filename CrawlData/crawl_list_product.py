@@ -4,9 +4,14 @@ import os
 from utils import read_csv_file
 import pandas as pd
 
+# ! Objective: Crawl all product in page category
+# ! Store Data: ./CrawlData/Data_File/{category}/page_{page_of_list_product}.json
+
+# Directory to store crawl data
 path_Folder_Data = './CrawlData/Data_File/'
 os.makedirs(path_Folder_Data, exist_ok=True)
 
+# URL of API
 url='https://tiki.vn/api/personalish/v1/blocks/listings'
 
 params = {

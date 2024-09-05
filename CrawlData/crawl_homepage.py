@@ -4,11 +4,15 @@ import os
 from cookies_and_headers import cookies, headers
 from urllib.parse import urlparse
 
-# Get Product Categories URL
+# ! Objective: Get Product Categories URL
+# ! Save to ./CrawlData/CSVFile/URLKeys
+dir_store = './CrawlData/CSVFile'
 
+# URL of api to get menu config
 url = 'https://api.tiki.vn/raiden/v2/menu-config'
 
-os.makedirs('./CrawlData/CSVFile', exist_ok=True)
+# create directory if it hasn't exists yet
+os.makedirs(dir_store, exist_ok=True)
 
 try:
     # Send a GET request to the homepage
@@ -36,6 +40,7 @@ try:
     print('Links have been written to links.csv')
 
 except requests.exceptions.HTTPError as err:
+    # Process HTTP error
     print('Error: ', err)
     print('Crawl homepage failed')
-    raise
+    raise #throw exception to stop program
