@@ -7,24 +7,7 @@ import pandas as pd
 path_Data_Folder = './CrawlData/Data_File/'
 os.makedirs(path_Data_Folder, exist_ok=True)
 
-# API endpoint for fetching reviews
-url = 'https://tiki.vn/api/v2/reviews'
-max_items = 20
-
-# Parameters for the API request
-params = {
-    'limit': str(max_items),
-    'include': 'comments,contribute_info,attribute_vote_summary',
-    'sort': 'score|desc,id|desc,stars|all',
-    'page': '1',
-    'spid': '10853528',
-    'product_id': '3304875',
-}
-
-# Read Product IDs from CSV File
-product_ids = pd.read_csv('./CrawlData/CSVFile/URLKeys.csv')
-
-def extract_review(category: str, product_id: int, page_review: int, create_folder = True):
+def extract_review(category: str, product_id: int, page_review: int, url, params, create_folder = True):
     '''
     Extract reviews for a product and save as JSON file
     
@@ -68,29 +51,50 @@ def extract_review(category: str, product_id: int, page_review: int, create_fold
     df_review.to_json(path_json_file, indent=2)
     return True
 
-try:
-    # Iterate through product categories
-    for _, row in product_ids.iloc[7:10].iterrows():
-        category = row['URLKeys']
-        path_product = path_Data_Folder + str(category) + '/page_'
-        
-        # Iterate through product pages
-        for page_product in range(1, 10): # Notes: from dien_gia_dung, crawl only 5 page
-            path_json_file = path_product + str(page_product) + '.json'
-            if not os.path.exists(path_json_file):
-                break
+def crawl_user_and_review():
+    '''
+    Objective: crawl user and review data
+    '''
+    # API endpoint for fetching reviews
+    url = 'https://tiki.vn/api/v2/reviews'
+    max_items = 20
+
+    # Parameters for the API request
+    params = {
+        'limit': str(max_items),
+        'include': 'comments,contribute_info,attribute_vote_summary',
+        'sort': 'score|desc,id|desc,stars|all',
+        'page': '1',
+        'spid': '10853528',
+        'product_id': '3304875',
+    }
+
+    # Read Product IDs from CSV File
+    product_ids = pd.read_csv('./CrawlData/CSVFile/URLKeys.csv')
+
+    try:
+        # Iterate through product categories
+        for _, row in product_ids.iloc[7:10].iterrows():
+            category = row['URLKeys']
+            path_product = path_Data_Folder + str(category) + '/page_'
             
-            # Read product IDs from JSON file
-            df = pd.read_json(path_json_file)
-            product_ids = df['id']
-            print(f'Crawling {row}')
-            
-            # Extract reviews for each product
-            for product_id in product_ids:
-                created_folder = True
-                for page_review in range(6, 10): # Notes: from dien_gia_dung, crawl 5 page, next, crawl 6 -> 10
-                    if not extract_review(category, product_id, page_review, created_folder):
-                        break
-                    created_folder = False
-except Exception as e:
-    print('Error: ', e)
+            # Iterate through product pages
+            for page_product in range(1, 10): # Notes: from dien_gia_dung, crawl only 5 page
+                path_json_file = path_product + str(page_product) + '.json'
+                if not os.path.exists(path_json_file):
+                    break
+                
+                # Read product IDs from JSON file
+                df = pd.read_json(path_json_file)
+                product_ids = df['id']
+                print(f'Crawling {row}')
+                
+                # Extract reviews for each product
+                for product_id in product_ids:
+                    created_folder = True
+                    for page_review in range(6, 10): # Notes: from dien_gia_dung, crawl 5 page, next, crawl 6 -> 10
+                        if not extract_review(category, product_id, page_review, url, params, created_folder):
+                            break
+                        created_folder = False
+    except Exception as e:
+        print('Error: ', e)
