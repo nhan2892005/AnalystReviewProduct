@@ -3,13 +3,11 @@ import pandas as pd
 from google.cloud import bigquery
 from dotenv import load_dotenv
 
-# Thiết lập môi trường
 load_dotenv()
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./TransferData/summary-reviews-7e33cf5e1c6f.json"
 db = os.getenv('db')
 dataset = os.getenv('dataset')
 
-# Khởi tạo client BigQuery
 client = bigquery.Client()
 
 def read_json_to_df(file_path):
@@ -25,7 +23,6 @@ def process_reviews(directory):
                 file_path = os.path.join(root, file)
                 df = read_json_to_df(file_path)
                 
-                # Chuyển đổi và lọc cột theo schema
                 df = df.rename(columns={
                     'id': 'review_id',
                     'review_created_date': 'date_id',
@@ -34,10 +31,8 @@ def process_reviews(directory):
                 
                 df['date_id'] = pd.to_datetime(df['date_id'], format='%Y-%m-%d %H:%M:%S', errors='coerce').dt.strftime('%Y%m%d').fillna('0').astype('int64')
 
-                # Xử lý delivery_date
                 df['delivery_date'] = pd.to_datetime(df['delivery_date'], format='%Y-%m-%d %H:%M:%S', errors='coerce').dt.strftime('%Y%m%d').fillna('0').astype('int64')
                 
-                # Chọn và sắp xếp lại các cột theo schema
                 df = df[[
                     'review_id', 'product_id', 'customer_id', 'seller_id',
                     'title', 'date_id', 'delivery_date', 'comment_count',

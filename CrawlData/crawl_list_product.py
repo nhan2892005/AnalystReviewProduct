@@ -1,7 +1,6 @@
 import requests
 from cookies_and_headers import cookies, headers
 import os
-from utils import read_csv_file
 import pandas as pd
 
 # ! Objective: Crawl all product in page category

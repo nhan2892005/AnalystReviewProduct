@@ -4,7 +4,7 @@ import sys
 
 def main():
     if len(sys.argv) != 2:
-        print("Usage: python run_all_crawl.py [--product | --review]")
+        print("Usage: python3 run_all_crawl.py [--product | --review]")
         return
 
     arg = sys.argv[1]

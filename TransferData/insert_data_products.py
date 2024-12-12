@@ -8,25 +8,20 @@ from datetime import datetime, timedelta
 import numpy as np
 from decimal import Decimal
 
-# Set the environment variable
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "./TransferData/summary-reviews-7e33cf5e1c6f.json"
 
-# Read the environment variable
 load_dotenv()
 db = os.getenv('db')
 dataset = os.getenv('dataset')
 
-# Construct a BigQuery client object.
 client = bigquery.Client()
 
 def clean_dataframe(df):
-    # Loại bỏ cột price_comparison nếu có
     if 'price_comparison' in df.columns:
         df = df.drop(columns=['price_comparison'])
     
     for column in df.columns:
         if df[column].dtype == 'object':
-            # Thay thế chuỗi 'None' bằng None của Python
             df[column] = df[column].replace('None', None)
         
         if column == 'product_id':
@@ -48,14 +43,12 @@ def clean_dataframe(df):
         elif column == 'updated_date_id':
             df[column] = pd.to_numeric(df[column], errors='coerce').astype('Int64')
     
-    # In ra thông tin về các cột và kiểu dữ liệu
     print(df.dtypes)
     print(df.head())
     
     return df
 
 def insert_data_to_bigquery(table_id, df):
-    # Làm sạch DataFrame trước khi insert
     df = clean_dataframe(df)
     
     job_config = bigquery.LoadJobConfig(
@@ -71,11 +64,10 @@ def insert_data_to_bigquery(table_id, df):
         df, table_id, job_config=job_config
     )
     
-    job.result()  # Wait for the job to complete
+    job.result()
     
     print(f"Đã chèn {len(df)} dòng vào {table_id}")
 
-# Khởi tạo các DataFrame toàn cục
 df_products = None
 df_categories = None
 df_brands = None
@@ -206,7 +198,6 @@ def get_Sellers_dataFrame(urlKeys):
         
     return df_sellers
 
-# Hàm để xử lý tất cả các file
 def process_all_files(urlKeys):
     for urlKey in urlKeys:
         file_path_product = f"./Records/{urlKey}/products.json"
@@ -219,7 +210,6 @@ def process_all_files(urlKeys):
         process_brands(file_path_brand)
         process_sellers(file_path_seller)
 
-# Hàm để loại bỏ các dòng trùng lặp và in thống kê
 def remove_duplicates_and_print_stats():
     global df_products, df_categories, df_brands, df_sellers
     
@@ -239,23 +229,20 @@ def remove_duplicates_and_print_stats():
         df_sellers = df_sellers.drop_duplicates(subset=['seller_id'], keep='first')
         print(f"Tổng số người bán sau khi loại bỏ trùng lặp: {len(df_sellers)}")
 
-# Hàm chính để chạy toàn bộ quá trình
 def main():
     product_categories_urlKey = pd.read_csv('./CrawlData/CSVFile/URLKeys.csv')
     product_categories_urlKey = product_categories_urlKey['URLKeys'].tolist()
 
-    process_all_files(product_categories_urlKey)  # Xử lý 2 URLKeys đầu tiên
+    process_all_files(product_categories_urlKey) 
     remove_duplicates_and_print_stats()
 
-    # Insert data into BigQuery
     if df_products is not None:
-        # Sắp xếp df_products theo yêu cầu
         df_products_sorted = df_products.sort_values(
             by=['category_id', 'rating_average', 'updated_date_id', 'price'],
             ascending=[True, False, False, True]
         )
         insert_data_to_bigquery(f"{db}.{dataset}.dim_Product", df_products_sorted)
-'''
+
     if df_categories is not None:
         insert_data_to_bigquery(f"{db}.{dataset}.dim_Category", df_categories)
 
@@ -264,7 +251,6 @@ def main():
 
     if df_sellers is not None:
         insert_data_to_bigquery(f"{db}.{dataset}.dim_Seller", df_sellers)
-'''
 
 if __name__ == "__main__":
     main()

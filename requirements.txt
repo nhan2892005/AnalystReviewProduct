@@ -1,0 +1,12 @@
+python-dotenv
+requests
+pandas
+datetime
+google-api-core              
+google-auth                 
+google-cloud-bigquery       
+google-cloud-core            
+google-crc32c               
+google-pasta                
+google-resumable-media       
+googleapis-common-protos 

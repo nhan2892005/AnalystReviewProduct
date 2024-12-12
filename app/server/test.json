@@ -1,0 +1,393 @@
+{
+    "id": 271379451,
+    "master_id": 271379451,
+    "name": "Lý Thuyết Trò Chơi",
+    "url_key": "ly-thuyet-tro-choi-p271379451",
+    "url_path": "ly-thuyet-tro-choi-p271379451.html?spid=271379452",
+    "short_url": "https://tiki.vn/product-p271379451.html?spid=271379452",
+    "type": "simple",
+    "book_cover": null,
+    "short_description": "LÝ THUYẾT TRÒ CHƠIĐời người giống như trò chơi, mỗi bước đều phải cân nhắc xem đi như thế nào, đi về đâu, phải kết hợp nhiều yếu tố lại chúng ta mới có thể đưa ra được lựa chọn. Mà trong quá trình ch...",
+    "price": 111000,
+    "list_price": 179000,
+    "original_price": 179000,
+    "badges_new": [
+        {
+            "placement": "left_authentic",
+            "code": "is_hero",
+            "type": "is_hero",
+            "index": 1,
+            "icon": "https://salt.tikicdn.com/ts/upload/94/36/e7/c5297f3fad0a83fb56f98be877904467.png",
+            "icon_width": 76,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        },
+        {
+            "placement": "text_overlay_product_image",
+            "code": "text_badge",
+            "type": "text_badge",
+            "index": 0,
+            "icon": null,
+            "icon_width": 0,
+            "icon_height": 0,
+            "text_color": "#FFF0F1",
+            "background_color": "#D93843",
+            "href": null,
+            "text": "9.9"
+        },
+        {
+            "placement": "left_brand",
+            "code": "is_authentic",
+            "type": "is_authentic",
+            "index": 4,
+            "icon": "https://salt.tikicdn.com/ts/upload/d7/56/04/b93b8c666e13f49971483596ef14800f.png",
+            "icon_width": 89,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        },
+        {
+            "placement": "right_authentic",
+            "code": "return_policy",
+            "type": "return_policy",
+            "index": 3,
+            "icon": "https://salt.tikicdn.com/ts/ta/b1/3f/4e/cc3d0a2dd751a7b06dd97d868d6afa56.png",
+            "icon_width": 114,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        }
+    ],
+    "badges_v3": [
+        {
+            "placement": "pdp_badge",
+            "code": "text_badge",
+            "type": "text_badge",
+            "index": 0,
+            "icon": null,
+            "icon_width": 0,
+            "icon_height": 0,
+            "text_color": "#FFF0F1",
+            "background_color": "#D93843",
+            "href": null,
+            "text": "9.9"
+        },
+        {
+            "placement": "pdp_badge",
+            "code": "is_hero",
+            "type": "pdp_icon_badge",
+            "index": 1,
+            "icon": "https://salt.tikicdn.com/ts/upload/94/36/e7/c5297f3fad0a83fb56f98be877904467.png",
+            "icon_width": 76,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        },
+        {
+            "placement": "pdp_badge",
+            "code": "return_policy",
+            "type": "pdp_icon_badge",
+            "index": 3,
+            "icon": "https://salt.tikicdn.com/ts/ta/b1/3f/4e/cc3d0a2dd751a7b06dd97d868d6afa56.png",
+            "icon_width": 114,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        },
+        {
+            "placement": "pdp_badge",
+            "code": "is_authentic",
+            "type": "pdp_icon_badge",
+            "index": 4,
+            "icon": "https://salt.tikicdn.com/ts/upload/d7/56/04/b93b8c666e13f49971483596ef14800f.png",
+            "icon_width": 89,
+            "icon_height": 20,
+            "text_color": null,
+            "background_color": null,
+            "href": null,
+            "text": null
+        }
+    ],
+    "tracking_info": {
+        "amplitude": {
+            "is_authentic": true,
+            "is_freeship_xtra": false,
+            "is_hero": true,
+            "return_reason": "any_reason"
+        }
+    },
+    "discount": 68000,
+    "discount_rate": 38,
+    "rating_average": 4.7,
+    "review_count": 392,
+    "favourite_count": 0,
+    "thumbnail_url": "https://salt.tikicdn.com/cache/280x280/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg",
+    "has_ebook": false,
+    "inventory_status": "available",
+    "inventory_type": "instock",
+    "productset_group_name": "",
+    "seller": null,
+    "is_flower": false,
+    "has_buynow": true,
+    "is_gift_card": false,
+    "salable_type": null,
+    "data_version": 3300,
+    "day_ago_created": 383,
+    "all_time_quantity_sold": 34096,
+    "meta_title": "",
+    "meta_description": "",
+    "meta_keywords": "",
+    "is_baby_milk": false,
+    "is_acoholic_drink": false,
+    "description": "<p><strong>LÝ THUYẾT TRÒ CHƠI</strong></p>\n<p>Đời người giống như trò chơi, mỗi bước đều phải cân nhắc xem đi như thế nào, đi về đâu, phải kết hợp nhiều yếu tố lại chúng ta mới có thể đưa ra được lựa chọn. Mà trong quá trình chọn lựa này các yếu tố khiến ta phải cân nhắc và những đường đi khác nhau sẽ ảnh hưởng trực tiếp đến kết quả.</p>\n<p>Cuốn sách Lý thuyết trò chơi là bách khoa toàn thư về tâm lý học, về tẩy não và chống lại tẩy não, thao túng và chống lại thao túng, thống trị và chống lại thống trị. Cuốn sách giới thiệu công thức chiến thắng cho những “trò chơi” đấu trí giữa người với người trong cuộc sống hằng ngày; phân tách các khái niệm lý thuyết trò chơi vốn mơ hồ trở thành ngôn ngữ dễ hiểu và kết nối liền mạch với nghệ thuật tâm lý học; cho phép bạn nắm vững những bí ẩn của trò chơi tâm lý trong thời gian ngắn nhất.</p>\n<p>Những kỹ năng trong Lý thuyết trò chơi có thể giúp chúng ta đọc thấu hoạt động tâm lý người khác, và từ đó chiếm thế chủ động trong trò chơi đấu trí giữa những người xung quanh.</p>\n<p>Những trích dẫn hay:<br />- Nếu coi một ván chơi như một trò chơi, mà trò chơi luôn luôn có thắng thua. Một bên thắng thì đồng nghĩa bên kia thất bại. <br />- Đằng sau những người chiến thắng lẫy lừng đều che giấu một nỗi khổ tâm và chua xót của kẻ thua cuộc.<br />- Hãy coi xã hội này như một ván cờ, mà mỗi chúng ta đều là những kỳ thủ. Từng đường đi nước bước của ta đều tương ứng với việc đặt từng con cờ. Một kỳ thủ tinh tường cẩn thận sẽ không hấp tấp đánh cờ, họ thường thông qua việc suy đoán lẫn nhau, thậm chí tính kế để từng bước đi đều khống chế đối phương cho đến khi giành được thắng lợi cuối cùng. Mà thuyết trò chơi chính là cuốn sách giáo khoa dạy những kỳ thủ chúng ta nên đánh cờ như thế nào.</p><p>Giá sản phẩm trên Tiki đã bao gồm thuế theo luật hiện hành. Bên cạnh đó, tuỳ vào loại sản phẩm, hình thức và địa chỉ giao hàng mà có thể phát sinh thêm chi phí khác như phí vận chuyển, phụ phí hàng cồng kềnh, thuế nhập khẩu (đối với đơn hàng giao từ nước ngoài có giá trị trên 1 triệu đồng).....</p>",
+    "images": [
+        {
+            "base_url": "https://salt.tikicdn.com/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg",
+            "is_gallery": true,
+            "label": null,
+            "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg",
+            "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg",
+            "position": null,
+            "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg",
+            "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/8a/b6/ba/1d95b88597f28e42d8ca91e3b3ff600f.jpg"
+        },
+        {
+            "base_url": "https://salt.tikicdn.com/ts/product/aa/43/76/f6c2532e1d8780c763efc27403ddc377.jpg",
+            "is_gallery": true,
+            "label": null,
+            "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/aa/43/76/f6c2532e1d8780c763efc27403ddc377.jpg",
+            "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/aa/43/76/f6c2532e1d8780c763efc27403ddc377.jpg",
+            "position": null,
+            "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/aa/43/76/f6c2532e1d8780c763efc27403ddc377.jpg",
+            "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/aa/43/76/f6c2532e1d8780c763efc27403ddc377.jpg"
+        },
+        {
+            "base_url": "https://salt.tikicdn.com/ts/product/a1/94/b7/843f590d2bcdd9ef7fa028ce54010a40.jpg",
+            "is_gallery": true,
+            "label": null,
+            "large_url": "https://salt.tikicdn.com/cache/w1200/ts/product/a1/94/b7/843f590d2bcdd9ef7fa028ce54010a40.jpg",
+            "medium_url": "https://salt.tikicdn.com/cache/w300/ts/product/a1/94/b7/843f590d2bcdd9ef7fa028ce54010a40.jpg",
+            "position": null,
+            "small_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a1/94/b7/843f590d2bcdd9ef7fa028ce54010a40.jpg",
+            "thumbnail_url": "https://salt.tikicdn.com/cache/200x280/ts/product/a1/94/b7/843f590d2bcdd9ef7fa028ce54010a40.jpg"
+        }
+    ],
+    "current_seller": {
+        "id": 1,
+        "sku": "7564919203230",
+        "name": "Tiki Trading",
+        "link": "https://tiki.vn/cua-hang/tiki-trading",
+        "logo": "d1/3f/ae/13ce3d83ab6b6c5e77e6377ad61dc4a5.jpg",
+        "price": 111000,
+        "product_id": "271379452",
+        "store_id": 40395,
+        "is_best_store": false,
+        "is_offline_installment_supported": null
+    },
+    "other_sellers": [
+        {
+            "id": 53179,
+            "name": "Nhà sách PLV",
+            "link": "https://tiki.vn/cua-hang/nha-sach-plv",
+            "logo": "6e/20/ad/edbf695d6497987e535b42040ab1bb28.png",
+            "price": 144000,
+            "product_id": "273280600",
+            "store_id": 50589
+        },
+        {
+            "id": 9988,
+            "name": "AHABOOKS",
+            "link": "https://tiki.vn/cua-hang/ahabooks",
+            "logo": "https://vcdn.tikicdn.com/ts/seller/7c/b8/e1/357f6a5d18da8daa4e9060a6b7eb9d5f.png",
+            "price": 152340,
+            "product_id": "273308977",
+            "store_id": 9778
+        },
+        {
+            "id": 281062,
+            "name": "Bamboo Books",
+            "link": "https://tiki.vn/cua-hang/bamboo-books",
+            "logo": "46/9a/b3/e4fbfd97e7607ea4d2ff8e9ad769121b.jpg",
+            "price": 152150,
+            "product_id": "273314438",
+            "store_id": 268132
+        },
+        {
+            "id": 126688,
+            "name": "info book",
+            "link": "https://tiki.vn/cua-hang/info-book",
+            "logo": "66/49/ce/c528ff3a6e4022b080c1f8c6fe7bc541.jpg",
+            "price": 179000,
+            "product_id": "274125519",
+            "store_id": 117060
+        },
+        {
+            "id": 295057,
+            "name": "HỆ THỐNG NHÀ SÁCH ABC",
+            "link": "https://tiki.vn/cua-hang/he-thong-nha-sach-abc",
+            "logo": "https://vcdn.tikicdn.com/ts/seller/98/3d/ff/cec0ba0eaa575634616ab4605fccbe6d.jpg",
+            "price": 161100,
+            "product_id": "274670872",
+            "store_id": 282399
+        },
+        {
+            "id": 97533,
+            "name": "Nhà Sách Vĩnh Thụy",
+            "link": "https://tiki.vn/cua-hang/nha-sach-vinh-thuy",
+            "logo": "https://vcdn.tikicdn.com/ts/seller/19/f2/bd/8bda12adffb15edf1b3d8339b0238283.jpg",
+            "price": 161000,
+            "product_id": "274871542",
+            "store_id": 90454
+        },
+        {
+            "id": 161219,
+            "name": "Nhà Sách Trẻ Online",
+            "link": "https://tiki.vn/cua-hang/nha-sach-tre-online",
+            "logo": "https://vcdn.tikicdn.com/ts/seller/6f/c0/15/6a56eb097a331c384398004ed5bc09ca.jpg",
+            "price": 152150,
+            "product_id": "276021284",
+            "store_id": 148433
+        }
+    ],
+    "specifications": [
+        {
+            "name": "Thông tin chung",
+            "attributes": [
+                {
+                    "code": "book_version",
+                    "name": "Phiên bản sách",
+                    "value": "Phiên bản thường"
+                },
+                {
+                    "code": "publisher_vn",
+                    "name": "Công ty phát hành",
+                    "value": "1980 Books"
+                },
+                {
+                    "code": "publication_date",
+                    "name": "Ngày xuất bản",
+                    "value": "2023-07-07 00:00:00"
+                },
+                {
+                    "code": "dimensions",
+                    "name": "Kích thước",
+                    "value": "13 x 20.5 cm"
+                },
+                {
+                    "code": "dich_gia",
+                    "name": "Dịch Giả",
+                    "value": "Vu Vũ"
+                },
+                {
+                    "code": "book_cover",
+                    "name": "Loại bìa",
+                    "value": "Bìa mềm"
+                },
+                {
+                    "code": "number_of_page",
+                    "name": "Số trang",
+                    "value": "320"
+                },
+                {
+                    "code": "manufacturer",
+                    "name": "Nhà xuất bản",
+                    "value": "Nhà Xuất Bản Dân Trí"
+                }
+            ]
+        }
+    ],
+    "price_comparison": {
+        "sub_title": "Giá từ 144.000 ₫",
+        "title": "So sánh 7 nhà bán khác"
+    },
+    "gift_item_title": "0 quà tặng kèm",
+    "highlight": {
+        "items": [
+            "Cung cấp công thức chiến thắng trong các trò chơi đấu trí hàng ngày.",
+            "Phân tích và giải thích các khái niệm lý thuyết trò chơi dễ hiểu.",
+            "Hướng dẫn đọc hiểu hành vi tâm lý của người khác và chiếm ưu thế trong trò chơi."
+        ],
+        "title": "Đặc điểm nổi bật"
+    },
+    "quantity_sold": {
+        "text": "Đã bán 34.096",
+        "value": 34096
+    },
+    "categories": {
+        "id": 871,
+        "name": "Sách tư duy - Kỹ năng sống",
+        "is_leaf": true
+    },
+    "installment_info_v3": [
+        {
+            "display_text": "Ưu đãi đến 600k với thẻ TikiCard",
+            "icon": "https://salt.tikicdn.com/ts/upload/73/4d/f7/f86e767bffc14aa3d6abed348630100b.png",
+            "summary": "Ưu đãi đến 600k với thẻ TikiCard.",
+            "title": "Ưu đãi đến 600k với thẻ TikiCard",
+            "type": "other",
+            "url": "https://tiki.vn/san-pham-so/the-dong-thuong-hieu-tiki-co-card"
+        },
+        {
+            "display_text": "Mua trước trả sau",
+            "icon": "https://salt.tikicdn.com/ts/upload/2a/27/6a/7bbba1f6c93a1a42a3c314e7b5825f4c.png",
+            "summary": "Duyệt hồ sơ nhanh chóng qua công ty tài chính.",
+            "title": "Mua trước trả sau",
+            "type": "postpaid",
+            "url": "https://tiki.vn/mua-truoc-tra-sau/thanh-toan?src=pdp&masterId=271379451&pid=271379452&seller_id=1&qty=1"
+        }
+    ],
+    "is_seller_in_chat_whitelist": true,
+    "inventory": {
+        "product_virtual_type": null,
+        "fulfillment_type": "tiki_delivery"
+    },
+    "return_and_exchange_policy": "Đổi trả trong<br><b>30 ngày</b><br>nếu sp lỗi.",
+    "is_tier_pricing_available": false,
+    "is_tier_pricing_eligible": false,
+    "benefits": [
+        {
+            "icon": "https://salt.tikicdn.com/ts/upload/c5/37/ee/76c708d43e377343e82baee8a0340297.png",
+            "text": "Được đồng kiểm khi nhận hàng"
+        },
+        {
+            "icon": "https://salt.tikicdn.com/ts/upload/ea/02/b4/b024e431ec433e6c85d4734aaf35bd65.png",
+            "text": "<b>Được hoàn tiền 200%</b> nếu là hàng giả."
+        },
+        {
+            "icon": "https://salt.tikicdn.com/ts/upload/d8/c7/a5/1cd5bd2f27f9bd74b2c340b8e27c4d82.png",
+            "text": "Đổi trả miễn phí trong 30 ngày. Được đổi ý.",
+            "sub_text": [],
+            "cta": {
+                "text": "Chi tiết",
+                "type": "open_policy_return_modal"
+            }
+        }
+    ],
+    "return_policy": {
+        "body": [
+            {
+                "label": "",
+                "content": [
+                    "Được đổi ý (sản phẩm phải còn nguyên hộp, tem, phụ kiện, chưa kích hoạt bảo hành, không áp dụng đơn hàng trả góp), hoặc",
+                    "Sản phẩm không đúng cam kết (lỗi kỹ thuật, giao sai/thiếu, bể vỡ…)"
+                ]
+            }
+        ],
+        "cta": {
+            "link": "https://hotro.tiki.vn/s/article/chinh-sach-doi-tra-san-pham",
+            "text_button": "Tìm hiểu thêm"
+        },
+        "title": "Đổi trả miễn phí trong 30 ngày"
+    }
+}
